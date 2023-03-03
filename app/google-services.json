@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "518101259523",
+    "firebase_url": "https://coffee-nhom14-default-rtdb.firebaseio.com",
+    "project_id": "coffee-nhom14",
+    "storage_bucket": "coffee-nhom14.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:518101259523:android:ca5e6276b03510bf31c536",
+        "android_client_info": {
+          "package_name": "com.example.nhom14_quanlycuahangcaphe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "518101259523-4vague0a9p7m6igge6qmepfs4hgnt86b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLeKS7uJm426hBe2Mo0EXnApgOmRy5fF8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "518101259523-4vague0a9p7m6igge6qmepfs4hgnt86b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

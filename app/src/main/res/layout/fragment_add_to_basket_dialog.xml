@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/mediumSpace">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Americano"
+            android:textColor="@color/colorBlack"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tvGia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="29000 VND"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/largeFontSize"
+            android:textStyle="normal" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số lượng:    "
+            android:textSize="20dp"
+            android:textColor="@color/black"/>
+        <ImageView
+
+            android:id="@+id/btnSubtract"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/smallSpace"
+            android:src="@drawable/minus" />
+        <TextView
+            android:id="@+id/tvQuantity"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/smallSpace"
+            android:text="1"
+            android:textColor="#000000"
+
+            android:textSize="20dp" />
+        <ImageView
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/smallSpace"
+            android:src="@drawable/plus" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ghi chú"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:textColor="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+
+
+        <EditText
+            android:id="@+id/et_ghichu"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:background="@drawable/background_shadow"
+            android:hint="Ghi chú"
+            android:padding="5dp" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_gravity="bottom">
+
+
+        <TextView
+            android:id="@+id/tv9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:padding="5dp"
+            android:text="Gợi ý"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/ex_ghichu1"
+            android:layout_width="75dp"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv9"
+            android:layout_alignStart="@+id/tv9"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border"
+            android:padding="5dp"
+            android:text="ít đường"
+            android:textColor="@color/black"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:id="@+id/ex_ghichu2"
+            android:layout_width="75dp"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/ex_ghichu1"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="0dp"
+            android:layout_toEndOf="@+id/ex_ghichu1"
+            android:background="@drawable/border"
+            android:padding="5dp"
+            android:text="ít đá"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/ex_ghichu3"
+            android:layout_width="75dp"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/ex_ghichu2"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="0dp"
+            android:layout_toEndOf="@+id/ex_ghichu2"
+            android:background="@drawable/border"
+            android:padding="5dp"
+            android:text="nhiều sữa"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_Them"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginTop="@dimen/mediumSpace"
+            android:background="#32B537"
+            android:padding="10dp"
+            android:text="Thêm"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/mediumFontSize" />
+
+        <Button
+            android:id="@+id/btnHuy"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_marginTop="@dimen/mediumSpace"
+            android:background="#F44336"
+            android:text="Hủy"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/mediumFontSize" />
+    </LinearLayout>
+
+
+</LinearLayout>

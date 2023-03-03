@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="@dimen/smallSpace">
+
+    <TextView
+        android:id="@+id/tvFoodNameBasket"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Milk Tea"
+        android:textColor="@color/teal_700"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/tvPriceFoodBasket"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvFoodNameBasket"
+        android:layout_alignStart="@+id/tvFoodNameBasket"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="5dp"
+        android:text="59000"
+        android:textColor="@color/black"
+        android:textSize="10dp" />
+
+    <TextView
+        android:id="@+id/tvQuantityBasket"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvFoodNameBasket"
+        android:layout_alignTop="@+id/tvFoodNameBasket"
+        android:layout_alignEnd="@+id/tvPrice"
+        android:layout_alignBottom="@+id/tvPriceFoodBasket"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="111dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="@color/colorRed"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/tvTotalPriceFoodBasket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tvQuantityBasket"
+        android:layout_alignBottom="@+id/tvQuantityBasket"
+        android:layout_marginStart="-91dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="-1dp"
+        android:layout_toEndOf="@+id/tvQuantityBasket"
+        android:text="59 000"
+        android:textColor="@color/black"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/tv_ghichu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvPriceFoodBasket"
+        android:layout_alignStart="@+id/tvPriceFoodBasket"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="10dp"
+        android:textSize="10dp"
+        android:text="" />
+</RelativeLayout>

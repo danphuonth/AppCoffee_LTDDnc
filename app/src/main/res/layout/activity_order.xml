@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderActivity">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/layoutmenu">
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar5"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="#55280C"
+                    app:titleTextColor="@color/white"
+                    app:popupTheme="@style/Theme.CoffeeApp.PopupOverlay" />
+
+                <fragment
+                    android:id="@+id/nav"
+                    android:name="androidx.navigation.fragment.NavHostFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/toolbar5"
+                    android:layout_marginTop="-0dp"
+                    app:defaultNavHost="true"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/toolbar5"
+
+                    app:navGraph="@navigation/nav_food" />
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/layoutViewBasket"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="@dimen/mediumSpace"
+            android:layout_marginTop="@dimen/mediumSpace"
+            android:layout_marginEnd="@dimen/mediumSpace"
+            android:layout_marginBottom="0dp"
+            android:background="@color/cf2">
+
+                <TextView
+                    android:id="@+id/btn_Reset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_baseline_settings_backup_restore_24"
+                    android:text="Chọn lại"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/mediumFontSize"
+                    android:padding="15dp"/>
+
+                <TextView
+
+                    android:padding="15dp"
+                    android:id="@+id/btn_Done"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:drawableRight="@drawable/ic_baseline_navigate_next_24"
+                    android:text="Xong"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/mediumFontSize" />
+
+                <TextView
+                    android:id="@+id/tvTotalItems"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="0"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/mediumFontSize" />
+        </RelativeLayout>
+
+</FrameLayout>

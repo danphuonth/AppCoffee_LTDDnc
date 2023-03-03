@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.nhom14_quanlycuahangcaphe.HomeFragment"
+        android:label="Danh mục bàn"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_tableDetailFragment2"
+            app:destination="@id/tableDetailFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.nhom14_quanlycuahangcaphe.ProfileFragment"
+        android:label="Trang cá nhân"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/tableDetailFragment2"
+        android:name="com.example.nhom14_quanlycuahangcaphe.TableDetailFragment"
+        android:label="Chi tiết bàn"
+        tools:layout="@layout/fragment_table_detail" >
+        <action
+            android:id="@+id/action_tableDetailFragment2_to_paymentFragment2"
+            app:destination="@id/paymentFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/paymentFragment2"
+        android:name="com.example.nhom14_quanlycuahangcaphe.PaymentFragment"
+        android:label="Thanh toán"
+        tools:layout="@layout/fragment_payment" />
+    <fragment
+        android:id="@+id/menuFragment2"
+        android:name="com.example.nhom14_quanlycuahangcaphe.MenuFragment"
+        android:label="Thực đơn"
+        tools:layout="@layout/fragment_menu" />
+    <fragment
+        android:id="@+id/nav_history"
+        android:name="com.example.nhom14_quanlycuahangcaphe.HistoryFragment"
+        android:label="Lịch sử hóa đơn"
+        tools:layout="@layout/fragment_history" >
+        <action
+            android:id="@+id/action_nav_history_to_historyDetailFragment"
+            app:destination="@id/historyDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/historyDetailFragment"
+        android:name="com.example.nhom14_quanlycuahangcaphe.HistoryDetailFragment"
+        android:label="Chi tiết đơn hàng"
+        tools:layout="@layout/fragment_history_detail" />
+</navigation>

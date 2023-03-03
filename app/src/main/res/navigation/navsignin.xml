@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navsignin"
+    app:startDestination="@id/personRegisterFragment">
+    <fragment
+        android:id="@+id/personRegisterFragment"
+        android:name="com.example.nhom14_quanlycuahangcaphe.PersonRegisterFragment"
+        android:label="Thông tin cá nhân"
+        tools:layout="@layout/fragment_person_register" >
+        <action
+            android:id="@+id/action_personRegisterFragment_to_accountRegisterFragment"
+            app:destination="@id/accountRegisterFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/accountRegisterFragment"
+        android:name="com.example.nhom14_quanlycuahangcaphe.AccountRegisterFragment"
+        android:label="Thông tin tài khoản"
+        tools:layout="@layout/fragment_account_register" />
+</navigation>
